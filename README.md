@@ -6,7 +6,7 @@ This is an emscripten compiled version of Lua 5.3.6.
 
 ## How this Library Was Built
 
-Run the following command in the lua-x.x.x/src folder:
+After installing emscripten, run the following command in the lua-x.x.x/src folder:
 
 ```shell
 make generic CC='emcc -s WASM=1' AR='emar rcu' RANLIB='emranlib'
