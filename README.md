@@ -12,6 +12,12 @@ After installing emscripten, run the following command in the lua-x.x.x/src fold
 make generic CC='emcc -s WASM=1' AR='emar rcu' RANLIB='emranlib'
 ```
 
+## How to Use with -fPIC
+
+```shell
+make generic MYCFLAGS=-fPIC CC='emcc -s WASM=1' AR='emar rcu' RANLIB='emranlib'
+```
+
 ## How to Use this with CMAKE and Emscripten
 
 Link as library for emscripten using cmake:
